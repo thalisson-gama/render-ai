@@ -1,0 +1,24 @@
+# Final: para apresentar ao cliente. Pensado para GPU dedicada.
+# No M1 de 8 GB isso demora muito e pode faltar memoria. Use na nuvem ou no PC.
+
+samples: 1024
+adaptive: true
+adaptive_threshold: 0.008
+denoise: true
+time_limit_s: 0            # sem teto: a qualidade manda
+resolution_scale: 1.0
+
+# Interior vive de luz indireta. Cortar quique difuso e o jeito mais rapido
+# de perder realismo, entao aqui e generoso.
+max_bounces: 16
+diffuse_bounces: 6
+glossy_bounces: 6
+transmission_bounces: 16
+transparent_bounces: 12
+
+fast_gi: false             # nunca no final: aproxima demais a luz indireta
+
+texture_max_px: null       # sem teto: qualidade final usa a textura inteira
+
+passes: true               # depth, normal e cryptomatte para a etapa de IA
+persistent_data: false

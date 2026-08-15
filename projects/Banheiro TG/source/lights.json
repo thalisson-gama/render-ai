@@ -1,0 +1,305 @@
+{
+  "escala_do_arquivo": 0.0254,
+  "luminarias": [
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5215,
+        3.6014,
+        2.7578
+      ],
+      "eixo_z": [
+        0.0,
+        -1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5383,
+        3.6151,
+        2.7578
+      ],
+      "eixo_z": [
+        1.20241,
+        -0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5245,
+        3.6319,
+        2.7578
+      ],
+      "eixo_z": [
+        0.0,
+        1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5077,
+        3.6182,
+        2.7578
+      ],
+      "eixo_z": [
+        -1.20241,
+        0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_IES_Light_4000K",
+      "tipo": "spot",
+      "posicao_m": [
+        5.523,
+        3.6166,
+        2.7595
+      ],
+      "eixo_z": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5215,
+        3.9814,
+        2.7578
+      ],
+      "eixo_z": [
+        0.0,
+        -1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5383,
+        3.9951,
+        2.7578
+      ],
+      "eixo_z": [
+        1.20241,
+        -0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5245,
+        4.0119,
+        2.7578
+      ],
+      "eixo_z": [
+        0.0,
+        1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        5.5077,
+        3.9982,
+        2.7578
+      ],
+      "eixo_z": [
+        -1.20241,
+        0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_IES_Light_4000K",
+      "tipo": "spot",
+      "posicao_m": [
+        5.523,
+        3.9966,
+        2.7595
+      ],
+      "eixo_z": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        4.2953,
+        3.7981,
+        2.7598
+      ],
+      "eixo_z": [
+        1.20241,
+        -0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        4.2815,
+        3.8149,
+        2.7598
+      ],
+      "eixo_z": [
+        0.0,
+        1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        4.2647,
+        3.8012,
+        2.7598
+      ],
+      "eixo_z": [
+        -1.20241,
+        0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        4.2785,
+        3.7844,
+        2.7598
+      ],
+      "eixo_z": [
+        -0.0,
+        -1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_IES_Light_4000K",
+      "tipo": "spot",
+      "posicao_m": [
+        4.28,
+        3.7997,
+        2.7615
+      ],
+      "eixo_z": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        3.6953,
+        3.7981,
+        2.7598
+      ],
+      "eixo_z": [
+        1.20241,
+        -0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        3.6815,
+        3.8149,
+        2.7598
+      ],
+      "eixo_z": [
+        0.0,
+        1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        3.6647,
+        3.8012,
+        2.7598
+      ],
+      "eixo_z": [
+        -1.20241,
+        0.0,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_Mesh_Light_4000K",
+      "tipo": "area",
+      "posicao_m": [
+        3.6785,
+        3.7844,
+        2.7598
+      ],
+      "eixo_z": [
+        -0.0,
+        -1.20241,
+        0.0
+      ],
+      "temperature_k": 4000
+    },
+    {
+      "componente": "V-Ray_IES_Light_4000K",
+      "tipo": "spot",
+      "posicao_m": [
+        3.68,
+        3.7997,
+        2.7615
+      ],
+      "eixo_z": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "temperature_k": 4000
+    }
+  ]
+}

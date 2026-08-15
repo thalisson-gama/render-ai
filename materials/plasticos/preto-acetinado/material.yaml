@@ -1,0 +1,8 @@
+name: preto-acetinado
+label: "Plástico preto acetinado"
+kind: plain
+descricao: "Ducha, acabamento plástico. Preto real nunca é 0.0: reflete e tem cor."
+base_color: [0.045, 0.045, 0.047]
+roughness: 0.35
+metallic: 0.0
+aliases: [plastico, preto, black, ducha, rubber, matte]

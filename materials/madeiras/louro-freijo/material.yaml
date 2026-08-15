@@ -1,0 +1,20 @@
+name: louro-freijo
+label: "Louro Freijó Poro 185x275"
+kind: maps
+descricao: "Marcenaria. Textura real do modelo da arquiteta, com poro aberto."
+
+maps:
+  base_color: basecolor.jpg
+
+tile_size_m: [1.85, 2.75]    # do próprio nome do arquivo: 185x275 cm
+projection: uv
+
+roughness: 0.42
+roughness_from_base: true
+roughness_variation: 0.10
+coat: 0.08                   # verniz fosco
+coat_roughness: 0.35
+bump_from_base: 0.20         # poro aberto tem relevo visível
+bump_distance_m: 0.0006
+
+aliases: [louro, freijo, freijó, madeira, marcenaria, mdf, wood, amadeirado]

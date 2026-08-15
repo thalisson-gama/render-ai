@@ -1,0 +1,21 @@
+name: freijo
+label: "Madeira Freijó"
+kind: wood
+descricao: "Marcenaria em freijó, tom médio amendoado, veio marcado."
+
+base_color: [0.290, 0.170, 0.088]
+secondary_color: [0.150, 0.082, 0.040]
+
+board_m: 1.00              # tamanho da peça de marcenaria
+grain_per_m: 48            # veias por metro (~2 cm entre veias, madeira real)
+grain_direction: X
+grain_distortion: 2.2
+contrast: 0.30
+
+roughness: 0.36
+bump: 0.04
+coat: 0.10                 # verniz fosco de marcenaria
+coat_roughness: 0.30
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [freijo, madeira, wood, mdf, amadeirado, marcenaria, laminado, carvalho, nogueira, cumaru, ipe, teca, imbuia, armario, painel, movel]

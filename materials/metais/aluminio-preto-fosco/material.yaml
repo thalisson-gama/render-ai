@@ -1,0 +1,12 @@
+name: aluminio-preto-fosco
+label: "Alumínio preto fosco"
+kind: metal
+descricao: "Esquadria e perfis. Preto fosco, reflexo largo e escuro."
+
+base_color: [0.055, 0.055, 0.058]
+metallic: 1.0
+roughness: 0.42
+brushed: false
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [aluminio, metal, esquadria, perfil, aco, inox, ferro, preto, black, puxador, serralheria, corrimao, guarda]

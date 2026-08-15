@@ -1,0 +1,14 @@
+name: linho-bege
+label: "Linho bege"
+kind: fabric
+descricao: "Estofado e cortina. Trama fina com brilho de borda (sheen)."
+
+base_color: [0.510, 0.455, 0.375]
+scale_m: 0.015             # trama de 1,5 cm
+roughness: 0.88
+sheen: 0.40
+sheen_roughness: 0.32
+bump: 0.25
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [tecido, linho, fabric, sofa, estofado, almofada, cortina, veludo, boucle, poltrona, cadeira, cama, tapete]

@@ -1,0 +1,8 @@
+name: porcelana-branca
+label: "Louça sanitária branca"
+kind: plain
+descricao: "Bacia, cuba, tampa. Esmalte cerâmico: branco quase puro com verniz duro."
+base_color: [0.880, 0.882, 0.878]
+roughness: 0.09
+metallic: 0.0
+aliases: [porcelana, louça, louca, bacia, sanitaria, cuba, ceramica, branco]

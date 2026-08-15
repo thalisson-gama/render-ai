@@ -1,0 +1,97 @@
+{
+  "unidades": "metros",
+  "cameras": [
+    {
+      "name": "Cena1",
+      "slug": "cena1",
+      "eye": [
+        3.80138,
+        -1.28893,
+        1.43047
+      ],
+      "target": [
+        3.80138,
+        8.61562,
+        1.43047
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "fov_deg": 35.0,
+      "fov_axis": "vertical",
+      "two_point": false,
+      "perspective": true
+    },
+    {
+      "name": "Cena2",
+      "slug": "cena2",
+      "eye": [
+        7.63859,
+        3.71627,
+        1.41633
+      ],
+      "target": [
+        -2.26597,
+        3.71627,
+        1.41633
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "fov_deg": 35.0,
+      "fov_axis": "vertical",
+      "two_point": false,
+      "perspective": true
+    },
+    {
+      "name": "Cena3",
+      "slug": "cena3",
+      "eye": [
+        0.26629,
+        3.79784,
+        1.3882
+      ],
+      "target": [
+        10.17084,
+        3.79784,
+        1.3882
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "fov_deg": 35.0,
+      "fov_axis": "vertical",
+      "two_point": false,
+      "perspective": true
+    },
+    {
+      "name": "Cena4",
+      "slug": "cena4",
+      "eye": [
+        4.55773,
+        8.12096,
+        1.39201
+      ],
+      "target": [
+        4.55772,
+        -1.78359,
+        1.39201
+      ],
+      "up": [
+        0.0,
+        -0.0,
+        1.0
+      ],
+      "fov_deg": 35.0,
+      "fov_axis": "vertical",
+      "two_point": false,
+      "perspective": true
+    }
+  ]
+}

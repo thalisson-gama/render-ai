@@ -1,0 +1,24 @@
+# Preview: para iterar. Roda no MacBook Air M1 em poucos minutos.
+# Serve para julgar enquadramento, material e luz. Nao serve para o cliente.
+
+samples: 96
+adaptive: true
+adaptive_threshold: 0.03
+denoise: true
+time_limit_s: 300          # teto duro: nenhuma imagem de preview passa de 5 min
+resolution_scale: 0.5      # metade da resolucao do projeto
+
+max_bounces: 8
+diffuse_bounces: 3
+glossy_bounces: 3
+transmission_bounces: 8
+transparent_bounces: 6
+
+fast_gi: true              # aproximacao de luz indireta, so no preview
+fast_gi_bounces: 2
+
+# teto de textura: numa maquina de 8 GB a memoria estoura antes do tempo
+texture_max_px: 1024
+
+passes: false
+persistent_data: false

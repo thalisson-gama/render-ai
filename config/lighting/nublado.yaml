@@ -1,0 +1,17 @@
+label: "Nublado"
+descricao: "Sem sol direto. Luz difusa e suave, perdoa material imperfeito."
+
+sun:
+  enabled: false          # sem lampada sol: toda a luz vem do ceu
+
+sky:
+  enabled: true
+  strength: 2.2           # ceu encoberto compensa a falta do direto
+  sun_disc: false
+  elevation_deg: 40
+  air_density: 1.4
+  aerosol_density: 3.5    # muito particulado: o ceu vira um difusor gigante
+  ozone_density: 1.0
+
+exposure: 0.2
+view_transform: AgX

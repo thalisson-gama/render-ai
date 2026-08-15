@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Atalho para a CLI. Uso: ./render --project apartamento-joao --all
+set -euo pipefail
+cd "$(dirname "$0")"
+exec python3 cli/render.py "$@"

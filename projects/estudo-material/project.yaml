@@ -1,0 +1,54 @@
+# ESTUDO DE MATERIAL. Nao e o projeto do cliente: a geometria e generica e
+# serve so para julgar acabamento. Os materiais e a luz 4000K sao os reais.
+
+project:
+  name: estudo-material
+  client: "interno"
+  location: { city: "Belo Horizonte", lat: -19.92, lon: -43.94, tz_offset: -3, date: "2026-03-21" }
+  north_angle_deg: 0.0
+  units_check: { expected_ceiling_m: 2.65, tolerance: 0.30 }
+
+source:
+  model: source/modelo.glb
+  cameras: source/cameras.json
+
+render:
+  resolution: [1920, 1080]
+  quality: entrega
+  device: auto
+
+lighting:
+  preset: interior-4000k
+  artificial:
+    LUZ_LED_4000K:
+      temperature_k: 4000
+      emission_strength: 180.0
+
+materials:
+  PISO:
+    use: pisos/eliane-oris-corda-90x90
+    projection: box          # cena de estudo nao tem UV do SketchUp
+  REVESTIMENTO:
+    use: revestimentos/decortiles-murano-verti-ostra-53x43
+    projection: box
+  PEDRA:
+    use: pedras/quartzito-splendido
+    projection: box
+  FORRO:        pinturas/branco-fosco
+  MARCENARIA:   madeiras/freijo
+  METAL:        metais/aluminio-preto-fosco
+  ESPELHO:      espelhos/espelho-prata
+  VIDRO:        vidros/incolor-6mm
+  LOUCA:
+    use: pinturas/branco-fosco
+    base_color: [0.88, 0.88, 0.87]
+    roughness: 0.12
+    coat: 0.5
+    coat_roughness: 0.04
+
+cameras:
+  include: [bancada-01, geral-01]
+
+cleanup:
+  merge_by_distance: false
+  recalculate_normals: false

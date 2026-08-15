@@ -1,0 +1,33 @@
+# Saidas de render: sao geradas, nunca versionadas
+projects/*/renders/
+projects/*/.run/
+
+# Modelos pesados: ficam na maquina de quem exporta, nao no repositorio.
+# O que vai para o git e a CONFIGURACAO (project.yaml) e os metadados leves
+# (cameras.json, lights.json, skp_materials.json), que sao os que importam
+# para reproduzir o render.
+*.skp
+*.dae
+*.glb
+*.gltf
+*.fbx
+*.obj
+*.rar
+*.zip
+*.3ds
+
+# Texturas extraidas do modelo do cliente: pertencem ao projeto dele.
+# As texturas da BIBLIOTECA (materials/) continuam versionadas de proposito.
+projects/*/source/textures/
+projects/*/source/cenas_sketchup/
+projects/*/source/BANHEIRO*/
+
+# Benchmarks sao por maquina
+tools/benchmark-*.json
+
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.venv/
+venv/

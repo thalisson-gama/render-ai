@@ -1,0 +1,19 @@
+label: "Manha, 9h"
+descricao: "Luz clara e mais fria, sombras definidas."
+
+sun:
+  enabled: true
+  hour: 9.0
+  energy: 20.0            # calibrado contra o ceu fisico
+  angle_deg: 0.545
+
+sky:
+  enabled: true
+  strength: 1.0
+  sun_disc: false
+  air_density: 1.0
+  aerosol_density: 0.8
+  ozone_density: 1.0
+
+exposure: 0.0
+view_transform: AgX

@@ -1,0 +1,22 @@
+# Entrega: o meio-termo. Resolucao cheia, amostragem honesta, sem os extras
+# caros do final. E o preset pensado para maquina modesta conseguir fechar
+# uma imagem apresentavel em tempo razoavel.
+
+samples: 300
+adaptive: true
+adaptive_threshold: 0.015
+denoise: true
+time_limit_s: 0
+resolution_scale: 1.0
+
+max_bounces: 12
+diffuse_bounces: 4
+glossy_bounces: 4
+transmission_bounces: 12
+transparent_bounces: 8
+
+fast_gi: false             # nunca em entrega: achata a luz indireta
+
+texture_max_px: 2048       # metade da memoria do final, diferenca quase nula
+passes: false              # passes so quando for entrar etapa de IA
+persistent_data: false

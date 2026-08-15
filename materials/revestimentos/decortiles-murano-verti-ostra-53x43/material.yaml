@@ -1,0 +1,23 @@
+name: decortiles-murano-verti-ostra-53x43
+label: "Revestimento Decortiles Murano Ostra VERTI BR 5,3x43"
+kind: maps
+descricao: "Revestimento de parede, ripado (versão VERTI, com ripa em relevo). BR = brilhante. Textura real extraída do .skp."
+
+maps:
+  base_color: basecolor.jpg
+
+# medido no material.xml: 16.909 in x 2.106 in = 43,0 x 5,3 cm.
+# Proporção 8,1:1. Usar um valor só nos dois eixos transformaria um ripado
+# de 5 cm numa placa de 43 cm.
+tile_size_m: [0.430, 0.053]
+projection: uv
+
+roughness: 0.06            # BR = brilhante, reflete o box e a luz
+roughness_from_base: true
+roughness_variation: 0.03
+coat: 0.45
+coat_roughness: 0.03
+bump_from_base: 0.35
+bump_distance_m: 0.004
+
+aliases: [murano, ostra, decortiles, revestimento, ripado, pastilha, parede]

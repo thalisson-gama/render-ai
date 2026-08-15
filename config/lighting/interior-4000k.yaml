@@ -1,0 +1,15 @@
+label: "Interior, luz artificial 4000K"
+descricao: "Banheiro sem luz natural relevante. Toda a luz vem das luminárias 4000K."
+
+sun:
+  enabled: false
+
+sky:
+  enabled: false
+  color: [0.012, 0.014, 0.018]   # praticamente escuro: a luz é das luminárias
+
+# a câmera balanceia o branco para a fonte: sem isso o render sai laranja
+white_balance_k: 4000
+
+exposure: 0.6                    # compensa a ausência de sol
+view_transform: AgX

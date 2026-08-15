@@ -1,0 +1,16 @@
+name: porcelanato-acetinado-claro
+label: "Porcelanato acetinado claro"
+kind: stone
+descricao: "Piso claro, veio quase imperceptível, reflexo suave e não espelhado."
+
+base_color: [0.720, 0.700, 0.675]
+vein_color: [0.620, 0.605, 0.585]
+scale_m: 1.20
+contrast: 0.06             # quase liso: porcelanato claro tem pouquíssimo veio
+roughness: 0.22            # acetinado, não polido
+coat: 0.20
+coat_roughness: 0.14
+bump: 0.0
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [porcelanato, piso, floor, ceramica, tile, revestimento, cimenticio, portobello, eliane, biancogres]

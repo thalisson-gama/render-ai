@@ -1,0 +1,87 @@
+project:
+  name: Banheiro TG
+  client: "Sérgio e Adriana"
+  location: { city: "Belo Horizonte", lat: -19.92, lon: -43.94, tz_offset: -3, date: "2026-03-21" }
+  north_angle_deg: 0.0        # a confirmar: ainda não medi o Norte real
+  units_check:
+    expected_ceiling_m: null  # sem trava até eu ver as dimensões reais
+    tolerance: 0.40
+
+source:
+  model: source/modelo.dae
+  cameras: source/cameras.json
+
+render:
+  resolution: [1920, 1080]
+  quality: preview
+  device: auto
+
+lighting:
+  preset: interior-4000k
+  # luminárias vindas dos componentes do modelo (source/lights.json)
+  fixtures:
+    V-Ray_Mesh_Light_4000K:
+      type: area
+      power_w: 90
+      size_m: 0.10
+      offset_z_m: -0.06     # luminárias vinham 1 cm ACIMA do forro (z=2.76 vs teto 2.75)
+      temperature_k: 4000
+    V-Ray_IES_Light_4000K:
+      type: spot
+      power_w: 90
+      angle_deg: 78
+      blend: 0.45
+      offset_z_m: -0.06
+      temperature_k: 4000
+
+materials:
+  # ---- estrutura: 80% da superfície, sem material no SketchUp ----
+  "material":     pinturas/branco-fosco
+  "material_0":   pinturas/branco-fosco
+  "material_3":   pinturas/branco-fosco
+
+  # ---- os três acabamentos especificados ----
+  "decortiles-murano-ostra-br-5_3x43cm-25":      revestimentos/decortiles-murano-ostra-53x43
+  "decortiles-murano-verti-ostra-br-5_3x43cm-25": revestimentos/decortiles-murano-verti-ostra-53x43
+  "eliane-oris-corda-ac-3d-90x90cm-01": pisos/eliane-oris-corda-90x90
+  "eliane-oris-corda-ac-3d-90x90cm-03": pisos/eliane-oris-corda-90x90
+  "eliane-oris-corda-ac-3d-90x90cm-05": pisos/eliane-oris-corda-90x90
+  "eliane-oris-corda-ac-3d-90x90cm-09": pisos/eliane-oris-corda-90x90
+  "splendido":  pedras/quartzito-splendido
+
+  # ---- marcenaria: textura real do modelo, não procedural ----
+  "Louro_Freijó_": madeiras/louro-freijo
+
+  # ---- espelho, vidro, louça, metais ----
+  "Mirror_01":               espelhos/espelho-prata
+  "Translucent_Glass_Gray":  vidros/incolor-6mm
+  "Vidro_comum":             vidros/incolor-6mm
+  "VIDRO_PRINCIPAL_VRAY_3.4": vidros/incolor-6mm
+  "_00._Bacia_Sanitária_Deca_Quadra_P.210.17_-_Porcelana": loucas/porcelana-branca
+  "__PORCELANA_AMARELA":     loucas/porcelana-branca
+  "_00._Bacia_Sanitária_Deca_Quadra_P.210.17_-_Metal": metais/cromado
+  "METAL_CROMADO_2":         metais/cromado
+  "__Metal_Cromado_":        metais/cromado
+  "CR_-_Cromado":            metais/cromado
+  "CHROMADO_INTERNO":        metais/cromado
+  "Metal_02":                metais/cromado
+  "Metal_05":                metais/cromado
+  "Steel_-_Satin":           metais/cromado
+  "Silver":                  metais/cromado
+  "Aluminum_Blurry":         metais/cromado
+  "LATÃO":                   metais/cromado
+  "Plastico_Preto_Acetinado_Ducha": plasticos/preto-acetinado
+  "Plastic_-_Matte__Gray_":  plasticos/preto-acetinado
+  "BL.MT_-_Black_Matte":     plasticos/preto-acetinado
+
+
+cameras:
+  include: [cena1, cena2, cena3, cena4]
+  # O arquivo traz a suíte inteira; as Cenas enquadram só o banheiro.
+  # Esta caixa faz a câmera começar a enxergar ao entrar no ambiente,
+  # que é o equivalente ao plano de secção do SketchUp.
+  room_bbox: [[3.30, 3.25, 0.00], [5.85, 5.10, 2.80]]
+
+cleanup:
+  merge_by_distance: false
+  recalculate_normals: false

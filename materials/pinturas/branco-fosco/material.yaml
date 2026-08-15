@@ -1,0 +1,11 @@
+name: branco-fosco
+label: "Pintura branco fosco"
+kind: plain
+descricao: "Parede e forro. Branco de tinta real, nunca 1.0: branco puro achata a luz indireta."
+
+base_color: [0.800, 0.795, 0.780]
+roughness: 0.70
+metallic: 0.0
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [parede, wall, pintura, tinta, gesso, forro, teto, ceiling, branco, white, drywall, massa, acrilica, alvenaria]

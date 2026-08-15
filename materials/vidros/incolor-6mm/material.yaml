@@ -1,0 +1,13 @@
+name: incolor-6mm
+label: "Vidro incolor 6mm"
+kind: glass
+descricao: "Vidro de esquadria. thin_wall ligado porque no SketchUp o vidro costuma ser um plano único."
+
+base_color: [0.965, 0.980, 0.975]
+roughness: 0.015
+ior: 1.52
+transmission: 1.0
+thin_wall: true
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [vidro, glass, cristal, incolor, temperado, janela, porta de vidro, box]

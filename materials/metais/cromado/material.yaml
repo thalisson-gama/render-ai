@@ -1,0 +1,8 @@
+name: cromado
+label: "Metal cromado"
+kind: metal
+descricao: "Torneira, ducha, acessório. Cromo é espelho levemente azulado, não cinza fosco."
+base_color: [0.80, 0.82, 0.85]
+metallic: 1.0
+roughness: 0.045
+aliases: [cromado, cromo, chrome, cromada, inox, steel, silver, metal, aluminum, latão, cromo]

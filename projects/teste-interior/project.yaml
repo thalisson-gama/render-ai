@@ -1,0 +1,60 @@
+# Projeto de validacao do pipeline. Geometria vem de tools/make_test_scene.py,
+# que imita o que o SketchUp entrega.
+#
+# Este arquivo e o UNICO ponto de entrada de mudanca de aparencia.
+# Trocar material, luz ou hora acontece aqui, nunca no codigo.
+
+project:
+  name: teste-interior
+  client: "interno"
+  location:
+    city: "Belo Horizonte"
+    lat: -19.92
+    lon: -43.94
+    tz_offset: -3
+    date: "2026-03-21"
+  north_angle_deg: 0.0        # bussola do eixo +Y do modelo. 0 = +Y aponta ao Norte
+  units_check:
+    expected_ceiling_m: 2.85  # 2,70 de pe-direito + 0,15 de laje
+    tolerance: 0.30
+
+source:
+  model: source/modelo.glb
+  cameras: source/cameras.json
+
+render:
+  resolution: [1920, 1080]
+  quality: preview
+  device: auto
+
+lighting:
+  preset: tarde-16h
+  # luminarias sao detectadas pelo nome do material (LUZ_*). Aqui so a potencia.
+  artificial:
+    LUZ_LED_3000K:
+      temperature_k: 3000
+      emission_strength: 18.0
+
+# Nome do material no modelo  ->  material da biblioteca
+materials:
+  PISO:        pisos/porcelanato-acetinado-claro
+  PAREDE:      pinturas/branco-fosco
+  FORRO:       pinturas/branco-fosco
+  MARCENARIA:  madeiras/freijo
+  BANCADA:     pedras/taj-mahal
+  ESQUADRIA:   metais/aluminio-preto-fosco
+  VIDRO:       vidros/incolor-6mm
+  SOFA:        tecidos/linho-bege
+  # "Material12" fica de fora de proposito: o relatorio tem que acusar
+
+cameras:
+  include: [sala-01, cozinha-01, sala-02]
+  overrides:
+    sala-01:
+      dof:
+        enabled: false
+
+# Operacoes que TOCAM geometria. Desligadas por padrao (REGRA ZERO).
+cleanup:
+  merge_by_distance: false
+  recalculate_normals: false

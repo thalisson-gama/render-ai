@@ -1,0 +1,21 @@
+name: eliane-oris-corda-90x90
+label: "Porcelanato Eliane Oris Corda AC 3D 90x90"
+kind: maps
+descricao: "Piso. Acetinado (AC) com relevo 3D. Textura real extraída do .skp."
+
+maps:
+  base_color: basecolor.jpg
+
+# medido no material.xml: 35.433 in = 0,90 m nos dois eixos
+tile_size_m: [0.900, 0.900]
+projection: uv
+
+roughness: 0.22            # AC = acetinado, nem polido nem natural
+roughness_from_base: true
+roughness_variation: 0.06
+coat: 0.15
+coat_roughness: 0.12
+bump_from_base: 0.10       # "3d" no nome do produto: tem relevo de verdade
+bump_distance_m: 0.0012
+
+aliases: [oris, corda, eliane, porcelanato, piso, floor, acetinado]

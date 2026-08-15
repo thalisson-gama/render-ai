@@ -1,0 +1,16 @@
+name: taj-mahal
+label: "Quartzito Taj Mahal"
+kind: stone
+descricao: "Bancada em quartzito bege claro, veio suave e acabamento polido."
+
+base_color: [0.780, 0.720, 0.620]
+vein_color: [0.520, 0.450, 0.360]
+scale_m: 1.60              # chapa de 1,60 m: o veio tem esse tamanho na cena
+contrast: 0.14
+roughness: 0.12
+coat: 0.35                 # polido
+coat_roughness: 0.04
+bump: 0.0
+
+# palavras que, no nome do material dela, sugerem este acabamento
+aliases: [taj, quartzito, marmore, marble, pedra, stone, granito, bancada, calacatta, nanoglass, silestone, dekton, soleira]

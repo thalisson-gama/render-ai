@@ -1,0 +1,19 @@
+label: "Tarde, 16h"
+descricao: "Sol baixo, luz quente e rasante. O horario que mais vende interior."
+
+sun:
+  enabled: true
+  hour: 16.0
+  energy: 18.0            # calibrado contra o ceu fisico
+  angle_deg: 0.6          # tamanho angular do sol: controla a maciez da sombra
+
+sky:
+  enabled: true
+  strength: 1.0
+  sun_disc: false         # o sol vem da lampada, nao do ceu (menos ruido)
+  air_density: 1.0
+  aerosol_density: 1.2    # um pouco de particulado deixa a tarde mais dourada
+  ozone_density: 1.0
+
+exposure: 0.0
+view_transform: AgX

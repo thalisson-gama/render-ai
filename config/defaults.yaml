@@ -1,0 +1,14 @@
+# Padroes globais. O project.yaml de cada projeto sobrescreve o que precisar.
+
+render:
+  engine: cycles
+  resolution: [1920, 1080]
+  device: auto          # auto | cpu | gpu
+  quality: preview
+
+location:
+  city: "Belo Horizonte"
+  lat: -19.92
+  lon: -43.94
+  tz_offset: -3
+  date: "2026-03-21"    # equinocio: dia "neutro" para julgar a luz

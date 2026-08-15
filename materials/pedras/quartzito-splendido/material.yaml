@@ -1,0 +1,22 @@
+name: quartzito-splendido
+label: "Quartzito Splendido"
+kind: maps
+descricao: "Bancada, meia parede do box e painel atrás do vaso. Textura real extraída do .skp da arquiteta."
+
+maps:
+  base_color: basecolor.jpg
+
+# medido no material.xml do .skp: xScale 39.370 in, yScale 26.322 in
+tile_size_m: [1.000, 0.669]
+projection: uv             # ela já posicionou o veio no SketchUp, respeitar
+
+roughness: 0.10            # quartzito polido
+roughness_from_base: true
+roughness_variation: 0.05
+coat: 0.30
+coat_roughness: 0.04
+bump_from_base: 0.03       # relevo mínimo: pedra polida é praticamente lisa
+bump_distance_m: 0.0005
+ior: 1.55
+
+aliases: [splendido, quartzito, bancada, pedra, marmore, stone, painel]

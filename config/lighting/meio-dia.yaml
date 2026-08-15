@@ -1,0 +1,19 @@
+label: "Meio-dia"
+descricao: "Sol alto. Contraste forte, sombra curta. Cuidado com estouro na janela."
+
+sun:
+  enabled: true
+  hour: 12.0
+  energy: 24.0            # calibrado contra o ceu fisico
+  angle_deg: 0.545
+
+sky:
+  enabled: true
+  strength: 1.0
+  sun_disc: false
+  air_density: 1.0
+  aerosol_density: 0.7
+  ozone_density: 1.0
+
+exposure: -0.3            # meio-dia estoura facil, entra ja compensado
+view_transform: AgX

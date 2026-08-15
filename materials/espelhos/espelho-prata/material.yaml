@@ -1,0 +1,9 @@
+name: espelho-prata
+label: "Espelho comum (prata sobre float)"
+kind: mirror
+descricao: "Espelho de banheiro. Metálico quase perfeito, com o leve verde do vidro float."
+
+base_color: [0.915, 0.945, 0.925]
+roughness: 0.004
+
+aliases: [espelho, mirror, spelho]

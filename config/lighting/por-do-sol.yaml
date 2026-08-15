@@ -1,0 +1,19 @@
+label: "Por do sol"
+descricao: "Sol quase no horizonte. Luz laranja rasante, sombras longas."
+
+sun:
+  enabled: true
+  hour: 17.6
+  energy: 10.0            # calibrado contra o ceu fisico
+  angle_deg: 0.9          # sol no horizonte parece maior, sombra mais macia
+
+sky:
+  enabled: true
+  strength: 1.2
+  sun_disc: false
+  air_density: 1.2
+  aerosol_density: 2.5
+  ozone_density: 1.4
+
+exposure: 0.4
+view_transform: AgX
